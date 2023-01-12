@@ -1,7 +1,7 @@
 # A1 - Piraten Karpen
 
-  * Author: < You name here >
-  * Email: < Your email here >
+  * Author: < Zain-Alabedeen Garada >
+  * Email: < garadz1@mcmaster.ca >
 
 ## Build and Execution
 
