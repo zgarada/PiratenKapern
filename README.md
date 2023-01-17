@@ -35,4 +35,5 @@ Remark: **We are assuming here you are using a _real_ shell (e.g., anything but 
 | x   | F04 | Player keeping random dice at their turn|  | | 
 | x   | F05 | End game when player reaches 6000 points |  | | 
 | x   | F06 | OR, end game when both run out of die |  | |
+| x   | F07 | Print the % of wins for each player |  | |
 
