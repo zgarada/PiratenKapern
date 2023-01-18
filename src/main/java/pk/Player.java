@@ -1,11 +1,12 @@
 package pk;
-import pk.Faces;
-import pk.Dice;
+
 
 public class Player {
-    static int score;
-    static int skulls;
-    static Dice myDice = new Dice();
+    public int score;
+    public int skulls;
+    public int dice;
+    public boolean result;
+    public int num_wins;
 }
     
 
