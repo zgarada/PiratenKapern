@@ -5,8 +5,6 @@ import pk.Player;
 public class PiratenKarpen {
 
     public static void main(String[] args) {
-        System.out.println("Welcome to Piraten Karpen Simulator!");
-        System.out.println("I'm rolling the dice");
         Player player1 = new Player(); Player player2 = new Player();
         
         for (int i = 0; i<42; i++){
@@ -16,7 +14,7 @@ public class PiratenKarpen {
         }
         float perc_p1 = (player1.num_wins/42)*100; float perc_p2 = (player2.num_wins/42)*100;
         System.out.println("Player 1 percentage of wins: " + perc_p1 + "%"); System.out.println("Player 2 precentage of wins: " + perc_p2 + "%");
-        System.out.println("That's all folks!");
+        
     }
     
 }

@@ -21,14 +21,14 @@ public class Game {
             }
         }
         if (p1.result == true){
-            System.out.println("Player 1 wins!");
+           // System.out.println("Player 1 wins!");
             p1.num_wins++;
-            System.out.println(p1.score);
+           // System.out.println(p1.score);
         }
         if (p2.result == true){
-            System.out.println("Player 2 wins!");
+           // System.out.println("Player 2 wins!");
             p2.num_wins++;
-            System.out.println(p2.score);
+           // System.out.println(p2.score);
         }
     }
 }

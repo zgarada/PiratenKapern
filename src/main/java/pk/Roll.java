@@ -5,7 +5,7 @@ public class Roll {
         Dice myDice = new Dice();
             while (p.skulls<3){
                 for (int i = 0; i<p.dice;i++){
-                    System.out.println(myDice.roll());
+                    //System.out.println(myDice.roll());
                     if (myDice.roll() == Faces.SKULL){
                         p.dice--;
                         p.skulls++;
