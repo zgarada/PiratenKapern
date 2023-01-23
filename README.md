@@ -29,10 +29,9 @@ Remark: **We are assuming here you are using a _real_ shell (e.g., anything but 
 
 | MVP? | Id  | Feature  | Status  |  Started  | Delivered |
 | :-:  |:-:  |---       | :-:     | :-:       | :-:       |
-| x   | F01 | Roll the die |  S | 01/01/23 |  |
-| x   | F02 | Compute Score |  S | 01/01/23 |  |
-| x   | F03 | Sim 42 games  |  P  |   |
-| x   | F04 | Player keeping random dice at their turn|  | | 
-| x   | F05 | End game when player reaches 6000 points |  | | 
-| x   | F06 | Print the % of wins for each player |  | |
-
+| x   | F01 | Roll the die |  D | 01/01/23 | 01/20/23 |
+| x   | F02 | Compute Score |  D | 01/01/23 | 01/20/23 |
+| x   | F03 | Sim 42 games  |  D  |  01/18/23 | 01/20/23 |
+| x   | F04 | Player rolling random dice until turn ends |  D  | 01/18/23 | 01/20/23 |
+| x   | F05 | End game when player reaches 6000 points |  D  | 01/18/23 | 01/20/23 |
+| x   | F06 | Print the % of wins for each player | D | 01/22/23 | 01/22/23 |

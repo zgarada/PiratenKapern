@@ -7,6 +7,10 @@ Jan 13:
   - Started on step 2
   
 Jan 20:
-  - Finished remaining functions in step 2
+  - Finished functions 1 throguh 5 in step 2
   - Fixed misunderstanding in Backlog
-  - 
+  
+Jan 22:
+  - Finished function 6 in step 2
+  - Completed coding part of step 2
+  - Fixed inaccuracy in backlog

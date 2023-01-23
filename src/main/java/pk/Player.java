@@ -6,7 +6,7 @@ public class Player {
     public int skulls;
     public int dice;
     public boolean result;
-    public int num_wins;
+    public float num_wins;
 }
     
 
