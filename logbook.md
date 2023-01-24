@@ -14,3 +14,8 @@ Jan 22:
   - Finished function 6 in step 2
   - Completed coding part of step 2
   - Fixed inaccuracy in backlog
+
+Jan 24:
+    - Implemented logging into my code.
+    - Added re-roll random number of remaining dice  from step 2 in backlog
+    
