@@ -23,7 +23,7 @@ Remark: **We are assuming here you are using a _real_ shell (e.g., anything but 
  * Status: 
    * Pending (P), Started (S), Blocked (B), Done (D)
  * Definition of Done (DoD):
-   * When a fucntion runs with little delay and accounts for possible errors.
+   * When a function runs with little delay and accounts for possible errors.
 
 ### Backlog 
 
@@ -35,3 +35,4 @@ Remark: **We are assuming here you are using a _real_ shell (e.g., anything but 
 | x   | F04 | Player rolling random dice until turn ends |  D  | 01/18/23 | 01/20/23 |
 | x   | F05 | End game when player reaches 6000 points |  D  | 01/18/23 | 01/20/23 |
 | x   | F06 | Print the % of wins for each player | D | 01/22/23 | 01/22/23 |
+| x   | F07 | Keep dice at random and roll other non-skull dice | S | 01/24/23 |           |
