@@ -20,15 +20,54 @@ public class Game {
                 }
             }
         }
-        if (p1.result == true){
-           // System.out.println("Player 1 wins!");
-            p1.num_wins++;
-           // System.out.println(p1.score);
+        if (p1.result == true && first == 0){
+            Roll.turn(p2);
+            if (p1.score > p2.score) {
+                System.out.println("Player 1 wins!");
+                p1.num_wins++;
+            }
+            else if (p1.score == p2.score){
+                Roll.turn(p1); Roll.turn(p2);
+                if (p1.score > p2.score) {
+                    System.out.println("Player 1 wins!");
+                    p1.num_wins++;
+                }
+                else {
+                    System.out.println("Player 2 wins!");
+                    p2.num_wins++;
+                }
+            }
+            else {
+                System.out.println("Player 2 wins!");
+                p2.num_wins++;
+            }
+            //System.out.println(p1.score);
         }
-        if (p2.result == true){
-           // System.out.println("Player 2 wins!");
-            p2.num_wins++;
-           // System.out.println(p2.score);
+        //if p2 starts
+        if (p2.result == true && first == 1){
+            Roll.turn(p1);
+            if (p2.score>p1.score){
+                System.out.println("Player 2 wins!");
+                p2.num_wins++;
+            }
+            else if (p1.score == p2.score){
+                Roll.turn(p2);Roll.turn(p1);
+                if (p1.score > p2.score) {
+                    System.out.println("Player 1 wins!");
+                    p1.num_wins++;
+                }
+                else {
+                    System.out.println("Player 2 wins!");
+                    p2.num_wins++;
+                }
+            }
+            else{
+                System.out.println("Player 1 wins!");
+                p1.num_wins++;
+            }
+
+
+            //System.out.println(p2.score);
         }
     }
 }
