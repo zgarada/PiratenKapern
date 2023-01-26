@@ -37,5 +37,5 @@ Remark: **We are assuming here you are using a _real_ shell (e.g., anything but 
 | x   | F06 | End game when player reaches 6000 points |  D  | 01/18/23 | 01/20/23 |
 | x   | F07 | Print the % of wins for each player | D | 01/22/23 | 01/22/23 |
 | x   | F08 | Keep dice at random and roll other non-skull dice | D | 01/24/23 | 01/24/23 |
-| x   | F09 | Store value of dice that are kept | P | 01/25/23 |      |
+|     | F09 | Store value of dice that are kept | P | 01/25/23 |      |
 | x   | F10 | The computer can randomly stop its turn | D | 01/24/23 | 01/24/23 |

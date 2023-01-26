@@ -19,3 +19,8 @@ Jan 24:
     - Implemented logging into my code.
     - Added re-roll random number of remaining dice  from step 2 in backlog
     
+Jan 25:
+    - Updated backlog for step 2 code to include more features.
+    - Completed MVP (Step 2)
+    - Code logs player scores to log file
+    - Fixed error when 2 players tie.
