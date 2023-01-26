@@ -24,19 +24,15 @@ public class Game {
 
         if (p1.score>p2.score){
             p1.num_wins++;
-            System.out.println("Player 1 score: " + p1.score);System.out.println("Player 2 score: " + p2.score);
-            System.out.println("Player 1 wins!");
+            //System.out.println("Player 1 score: " + p1.score);System.out.println("Player 2 score: " + p2.score);
+            //System.out.println("Player 1 wins!");
         }
         else if (p1.score<p2.score){
             p2.num_wins++;
-            System.out.println("Player 1 score: " + p1.score);System.out.println("Player 2 score: " + p2.score);
-            System.out.println("Player 2 wins!");
+           // System.out.println("Player 1 score: " + p1.score);System.out.println("Player 2 score: " + p2.score);
+           // System.out.println("Player 2 wins!");
         }
 
-        else{
-            System.out.println("Player 1 score: " + p1.score);System.out.println("Player 2 score: " + p2.score);
-            System.out.println("What da faq");
-        }
 
 
     }
