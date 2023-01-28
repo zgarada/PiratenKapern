@@ -6,8 +6,7 @@ import java.util.Iterator;
 public class Roll {
     public static boolean turn(Player p) {
         Dice myDice = new Dice();
-        List < Faces > dice_stored = new ArrayList<>();
-        List < Faces > dice_rolled = new ArrayList<>();
+        //List < Faces > dice_stored = new ArrayList<>();
         int iterator = 0;
         Random reroll = new Random(); Random random_numDice = new Random();
         int count = 0;
@@ -22,11 +21,11 @@ public class Roll {
             }
             else if (roll == Faces.GOLD || roll == Faces.DIAMOND){
                 p.score += 100;
-                dice_stored.add(iterator, roll);
+                p.player_array.add(iterator, roll);
                 iterator++;
             }
             else{
-                dice_stored.add(iterator, roll);
+                p.player_array.add(iterator, roll);
                 iterator++;
             }
 
@@ -55,13 +54,13 @@ public class Roll {
                         }
                         else if (roll == Faces.GOLD || roll == Faces.DIAMOND){
                             count += 100;
-                            dice_stored.remove(iter + numDiceKeep);
-                            dice_stored.add(iter + numDiceKeep, roll);
+                            p.player_array.remove(iter + numDiceKeep);
+                            p.player_array.add(iter + numDiceKeep, roll);
                             iter++;
                         }
                         else{
-                            dice_stored.remove(iter + numDiceKeep);
-                            dice_stored.add(iter + numDiceKeep, roll);
+                            p.player_array.remove(iter + numDiceKeep);
+                            p.player_array.add(iter + numDiceKeep, roll);
                             iter++;
                         }
                         if (p.score >= 6000){
@@ -84,7 +83,8 @@ public class Roll {
 
        // System.out.println("List " + dice_stored);
         p.skulls = 0;
-        p.dice = 8; 
+        p.dice = 8;
+        p.player_array.clear();
         return p.result;
     }   
 }

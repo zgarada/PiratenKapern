@@ -24,3 +24,8 @@ Jan 25:
     - Completed MVP (Step 2)
     - Code logs player scores to log file
     - Fixed error when 2 players tie.
+
+Jan 27:
+    - Finished feature 9 which is storing the values of the faces into an array.
+    - Updated build and execution section in README file to explain how to turn on/off tracing.
+    - 
