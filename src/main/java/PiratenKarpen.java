@@ -14,15 +14,13 @@ public class PiratenKarpen {
             player1.skulls = 0; player1.dice = 8; player1.score = 0; player1.result = false;
             player2.skulls = 0; player2.dice = 8; player2.score = 0; player2.result = false;
             Game.game(player1,player2);
+
             //System.out.println("Player 1 score: " + player1.score);System.out.println("Player 2 score: " + player2.score);
             logger.info("Player 1 score: " + player1.score); logger.info("Player 2 score: " + player2.score);
         }
         float perc_p1 = (player1.num_wins/42)*100; float perc_p2 = (player2.num_wins/42)*100;
         System.out.println("Player 1 percentage of wins: " + perc_p1 + "%"); System.out.println("Player 2 precentage of wins: " + perc_p2 + "%");
-        System.out.println("Number wins player 1: " + player1.num_wins); System.out.println("Number wins player 2: " + player2.num_wins);
-
-
-
+       // System.out.println("Number wins player 1: " + player1.num_wins); System.out.println("Number wins player 2: " + player2.num_wins);
 
     }
     

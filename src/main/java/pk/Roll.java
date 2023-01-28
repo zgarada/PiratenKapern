@@ -1,39 +1,68 @@
 package pk;
 import java.util.Random;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Iterator;
 public class Roll {
     public static boolean turn(Player p) {
         Dice myDice = new Dice();
+        List < Faces > dice_stored = new ArrayList<>();
+        List < Faces > dice_rolled = new ArrayList<>();
+        int iterator = 0;
+        Random reroll = new Random(); Random random_numDice = new Random();
+        int count = 0;
+       // int NumDiceReroll_init = random_numDice.nextInt(2,p.dice+1);
+      //  int numDiceKeep_init = p.dice - NumDiceReroll_init;
         //Initial roll of all 8 dice
         for (int i = 0; i< 8 ; i++){
-            if (myDice.roll() == Faces.SKULL){
+            Faces roll = myDice.roll();
+            if (roll == Faces.SKULL){
                 p.dice--;
                 p.skulls++;
             }
-            if (myDice.roll() == Faces.GOLD || myDice.roll() == Faces.DIAMOND){
+            else if (roll == Faces.GOLD || roll == Faces.DIAMOND){
                 p.score += 100;
+                dice_stored.add(iterator, roll);
+                iterator++;
             }
+            else{
+                dice_stored.add(iterator, roll);
+                iterator++;
+            }
+
             if (p.score >= 6000){
                 p.result = true;
                 return p.result;
             }
         }
 
-        Random reroll = new Random(); Random random_numDice = new Random();
-        int count = 0;
+
+
 
             while (p.skulls<3){ //Each roll
+                int iter = 0;
                 //Implement end turn at random
                 int reroll_int = reroll.nextInt(2);
                 //If reroll, roll
                 if (reroll_int == 1){
-                    int randNumDice = random_numDice.nextInt(2,p.dice+1);
-                    for (int i = 0; i<randNumDice;i++){ //Rolling the X dice
-                        if (myDice.roll() == Faces.SKULL){
+                    int NumDiceReroll = random_numDice.nextInt(2,p.dice+1);
+                    int numDiceKeep = p.dice - NumDiceReroll;
+                    for (int i = 0; i<NumDiceReroll;i++){ //Rolling the X dice
+                        Faces roll = myDice.roll();
+                        if (roll == Faces.SKULL){
                             p.dice--;
                             p.skulls++;
                         }
-                        if (myDice.roll() == Faces.GOLD || myDice.roll() == Faces.DIAMOND){
+                        else if (roll == Faces.GOLD || roll == Faces.DIAMOND){
                             count += 100;
+                            dice_stored.remove(iter + numDiceKeep);
+                            dice_stored.add(iter + numDiceKeep, roll);
+                            iter++;
+                        }
+                        else{
+                            dice_stored.remove(iter + numDiceKeep);
+                            dice_stored.add(iter + numDiceKeep, roll);
+                            iter++;
                         }
                         if (p.score >= 6000){
                             p.result = true;
@@ -52,6 +81,8 @@ public class Roll {
                 }
 
             }
+
+       // System.out.println("List " + dice_stored);
         p.skulls = 0;
         p.dice = 8; 
         return p.result;

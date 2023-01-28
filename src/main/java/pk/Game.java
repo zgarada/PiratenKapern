@@ -6,7 +6,7 @@ public class Game {
     public static void game(Player p1, Player p2) {
         Random start = new Random();
         int first = start.nextInt(2);
-        while (p1.result == false && p2.result == false){
+        while (!p1.result && !p2.result){
             if (first == 0){
                 Roll.turn(p1);
                 Roll.turn(p2);
@@ -24,16 +24,11 @@ public class Game {
 
         if (p1.score>p2.score){
             p1.num_wins++;
-            //System.out.println("Player 1 score: " + p1.score);System.out.println("Player 2 score: " + p2.score);
-            //System.out.println("Player 1 wins!");
+           // System.out.println("Player 1 wins!");
         }
         else if (p1.score<p2.score){
             p2.num_wins++;
-           // System.out.println("Player 1 score: " + p1.score);System.out.println("Player 2 score: " + p2.score);
-           // System.out.println("Player 2 wins!");
+            //System.out.println("Player 2 wins!");
         }
-
-
-
     }
 }
