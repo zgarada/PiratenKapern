@@ -1,17 +1,15 @@
 package pk;
+import java.util.Collections;
 import java.util.Random;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Iterator;
+
 public class Roll {
     public static boolean turn(Player p) {
         Dice myDice = new Dice();
-        //List < Faces > dice_stored = new ArrayList<>();
         int iterator = 0;
         Random reroll = new Random(); Random random_numDice = new Random();
         int count = 0;
-       // int NumDiceReroll_init = random_numDice.nextInt(2,p.dice+1);
-      //  int numDiceKeep_init = p.dice - NumDiceReroll_init;
+
+
         //Initial roll of all 8 dice
         for (int i = 0; i< 8 ; i++){
             Faces roll = myDice.roll();
@@ -35,14 +33,13 @@ public class Roll {
             }
         }
 
-
-
-
             while (p.skulls<3){ //Each roll
-                int iter = 0;
+
                 //Implement end turn at random
+                int iter = 0;
                 int reroll_int = reroll.nextInt(2);
-                //If reroll, roll
+
+                //If reroll is true (1)
                 if (reroll_int == 1){
                     int NumDiceReroll = random_numDice.nextInt(2,p.dice+1);
                     int numDiceKeep = p.dice - NumDiceReroll;
@@ -69,7 +66,7 @@ public class Roll {
                         }
                     }
                 }
-                //If not reroll and end turn, add points to score
+                //If reroll false (0), end turn, add points to score
                 else{
                     p.score += count;
                     if (p.score >= 6000){
@@ -81,7 +78,7 @@ public class Roll {
 
             }
 
-       // System.out.println("List " + dice_stored);
+        Collections.sort(p.player_array);
         p.skulls = 0;
         p.dice = 8;
         p.player_array.clear();
