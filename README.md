@@ -43,3 +43,6 @@ Remark: **We are assuming here you are using a _real_ shell (e.g., anything but 
 |     | F11 | Add 3-of-a-kind to 8-of-a-kind | D  |  01/28/23  | 01/28/23 |
 |     | F12 | Add strategy to maximize points (keep faces with highest # of occurrences) | D  | 01/29/23   | 01/29/23 |
 |     | F13 | specify from the command line which strategies are used | D  | 01/29/23   | 01/29/23  |
+|     | F14 | Implement the 3 different versions of the sea-battle card into game class | D | 01/29/23   | 01/29/23 |
+|     | F15 | Track number of sabers rolled | D | 01/29/23   | 01/29/23 |
+|     | F16 | If number achieved, score points.  | D | 01/29/23   | 01/29/23 |

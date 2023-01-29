@@ -10,12 +10,22 @@ public class Game {
         if (random && combo){
             while (!p1.result && !p2.result){
                 if (first == 0){
-                    Roll.turn(p1,combo);
-                    Roll.turn(p2,!combo);
+                    p1.skulls = 0; p1.dice = 8;
+                    System.out.println("Player 1:");
+                    Roll.turn(p1,false);
+
+                    p2.skulls = 0; p2.dice = 8;
+                    System.out.println("Player 2:");
+                    Roll.turn(p2,true);
                 }
                 else{
-                    Roll.turn(p2,!combo);
-                    Roll.turn(p1,combo);
+                    p2.skulls = 0; p2.dice = 8;
+                    System.out.println("Player 2:");
+                    Roll.turn(p2,true);
+
+                    p1.skulls = 0; p1.dice = 8;
+                    System.out.println("Player 1:");
+                    Roll.turn(p1,false);
                 }
             }
         }
@@ -23,12 +33,16 @@ public class Game {
         else if (random && !combo){
             while (!p1.result && !p2.result){
                 if (first == 0){
-                    Roll.turn(p1,!combo);
-                    Roll.turn(p2,!combo);
+                    System.out.println("Player 1:");
+                    Roll.turn(p1,false);
+                    System.out.println("Player 2:");
+                    Roll.turn(p2,false);
                 }
                 else{
-                    Roll.turn(p2,!combo);
-                    Roll.turn(p1,!combo);
+                    System.out.println("Player 2:");
+                    Roll.turn(p2,false);
+                    System.out.println("Player 1:");
+                    Roll.turn(p1,false);
                 }
             }
         }
@@ -36,12 +50,12 @@ public class Game {
         else if (!random && combo){
             while (!p1.result && !p2.result){
                 if (first == 0){
-                    Roll.turn(p1,combo);
-                    Roll.turn(p2,combo);
+                    Roll.turn(p1,true);
+                    Roll.turn(p2,true);
                 }
                 else{
-                    Roll.turn(p2,combo);
-                    Roll.turn(p1,combo);
+                    Roll.turn(p2,true);
+                    Roll.turn(p1,true);
                 }
             }
         }

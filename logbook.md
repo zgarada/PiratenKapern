@@ -30,5 +30,6 @@ Jan 27:
     - Updated build and execution section in README file to explain how to turn on/off tracing.
     - Updated README backlog to match business logic for step 4.
 
-Jan 28:
-    - 
+Jan 29:
+    - Finished features 14, 15, and 16.
+    - Updated backlog.
