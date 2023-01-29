@@ -40,6 +40,6 @@ Remark: **We are assuming here you are using a _real_ shell (e.g., anything but 
 | x   | F08 | Keep dice at random and roll other non-skull dice | D | 01/24/23 | 01/24/23 |
 | x   | F09 | Store value of dice that are kept | D | 01/25/23 |  01/27/23  |
 | x   | F10 | The computer can randomly stop its turn | D | 01/24/23 | 01/24/23 |
-|     | F11 | Add 3-of-a-kind to 4-of-a-kind | P  |    |  |
-|     | F12 | Add strategy to maximize points (keep faces with highest # of occurrences) | P  |    |  |
-|     | F13 | specify from the command line which strategies are used | P  |    |  |
+|     | F11 | Add 3-of-a-kind to 8-of-a-kind | D  |  01/28/23  | 01/28/23 |
+|     | F12 | Add strategy to maximize points (keep faces with highest # of occurrences) | D  | 01/29/23   | 01/29/23 |
+|     | F13 | specify from the command line which strategies are used | D  | 01/29/23   | 01/29/23  |

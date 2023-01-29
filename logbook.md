@@ -29,3 +29,6 @@ Jan 27:
     - Finished feature 9 which is storing the values of the faces into an array.
     - Updated build and execution section in README file to explain how to turn on/off tracing.
     - Updated README backlog to match business logic for step 4.
+
+Jan 28:
+    - 
