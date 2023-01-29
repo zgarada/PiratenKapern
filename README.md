@@ -46,3 +46,5 @@ Remark: **We are assuming here you are using a _real_ shell (e.g., anything but 
 |     | F14 | Implement the 3 different versions of the sea-battle card into game class | D | 01/29/23   | 01/29/23 |
 |     | F15 | Track number of sabers rolled | D | 01/29/23   | 01/29/23 |
 |     | F16 | If number achieved, score points.  | D | 01/29/23   | 01/29/23 |
+|     | F17 | Implement 4 monkey business cards into Card class  | S | 01/29/23   | 01/29/23 |
+|     | F18 |  Change Roll class to implement monkey-business card | s | 01/29/23   | 01/29/23 |
