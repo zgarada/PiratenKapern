@@ -11,20 +11,16 @@ public class Game {
             while (!p1.result && !p2.result){
                 if (first == 0){
                     p1.skulls = 0; p1.dice = 8;
-                    System.out.println("Player 1:");
                     Roll.turn(p1,false);
 
                     p2.skulls = 0; p2.dice = 8;
-                    System.out.println("Player 2:");
                     Roll.turn(p2,true);
                 }
                 else{
                     p2.skulls = 0; p2.dice = 8;
-                    System.out.println("Player 2:");
                     Roll.turn(p2,true);
 
                     p1.skulls = 0; p1.dice = 8;
-                    System.out.println("Player 1:");
                     Roll.turn(p1,false);
                 }
             }
@@ -33,15 +29,15 @@ public class Game {
         else if (random && !combo){
             while (!p1.result && !p2.result){
                 if (first == 0){
-                    System.out.println("Player 1:");
+
                     Roll.turn(p1,false);
-                    System.out.println("Player 2:");
+
                     Roll.turn(p2,false);
                 }
                 else{
-                    System.out.println("Player 2:");
+
                     Roll.turn(p2,false);
-                    System.out.println("Player 1:");
+
                     Roll.turn(p1,false);
                 }
             }
@@ -59,18 +55,15 @@ public class Game {
                 }
             }
         }
-
-
-
+        //In case of a tie
         while(p1.score == p2.score){
             Roll.turn(p1,combo);Roll.turn(p2,combo);
         }
-
         if (p1.score>p2.score){
             p1.num_wins++;
            // System.out.println("Player 1 wins!");
         }
-        else if (p1.score<p2.score){
+        else{
             p2.num_wins++;
             //System.out.println("Player 2 wins!");
         }

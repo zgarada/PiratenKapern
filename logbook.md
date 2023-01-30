@@ -7,7 +7,7 @@ Jan 13:
   - Started on step 2
   
 Jan 20:
-  - Finished functions 1 throguh 5 in step 2
+  - Finished functions 1 through 5 in step 2
   - Fixed misunderstanding in Backlog
   
 Jan 22:
@@ -33,3 +33,7 @@ Jan 27:
 Jan 29:
     - Finished features 14, 15, and 16.
     - Updated backlog.
+    - Finished Features 17 and 18.
+    - Completed code.
+    - Completed and submitted report.
+    
